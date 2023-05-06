@@ -1,1 +1,1 @@
-A slim python3 docker image built from alpine
+A slim python3 docker image built from alpine.
