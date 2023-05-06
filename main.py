@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     print('Environment variables:')
     for key, value in os.environ.items():
-        if re.match(r'AK|SK|KEY|ACCESS|SECRET|PASS', key):
+        if re.match(r'.*(AK|SK|KEY|ACCESS|SECRET|PASS).*', key):
             print('  %s: %s (desensitized)' % (key, desensitize(value)))
         else:
             print('  %s: %s' % (key, value))
